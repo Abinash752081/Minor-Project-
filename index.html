@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Online Food Delivery Services in India | MyOnlineMeal.com</title>
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="/css/phone.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <script>
+       function order(){
+            document.getElementById("odr").style.backgroundColor="green";
+            confirm("Are you sure! you want to continue with this order.");       
+        }
+
+        function feedbackUser(){
+            var name=document.getElementById("name").value;
+            var email=document.getElementById("email").value;
+            var phone_no=document.getElementById("phone").value;
+            var feedback=document.getElementById("message").value;
+
+            alert("Your Name is :" + name +"\n"+
+                  "Your Email Id is :" + email +"\n"+
+                  "Your Mobile No. is :" + phone_no +"\n"+
+                  "Your Feedback is :" + feedback );
+        }
+    </script>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="tasty logo.png" alt="MyOnlineMeal.com">
+        </div>
+        <ul>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#ser">Services</a></li>
+            <li class="item"><a href="#">About Us</a></li>
+            <li class="item"><a href="#contact_box">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">Welcome To MyOnlineMeal</h1>
+        <p>MyOnlineMeal invites you to savor the finest flavors and culinary delights from the comfort of your home. Immerse yourself in a world of exquisite tastes, where every dish is crafted with passion and precision to elevate your dining experience.</p>
+        <button class="btn" id="odr"onClick="order()">Order Now</button>
+    </section>
+
+    <selection class="services-container" id="ser">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="img/1.png" alt="">
+                <h2 class="h-secondary center">Food Ordering</h2>
+                <p class="center">With MyOnlineMeal, ordering your favorite dishes is a breeze. Navigate our user-friendly platform, customize your order, and await a seamless delivery experience. Elevate your mealtime rituals and indulge in a symphony of flavors with just a few clicks.</p>
+            </div>
+            <div class="box">
+                <img src="img/2.png" alt="">
+                <h2 class="h-secondary center">Food Catering</h2>
+                <p class="center">Our catering menus are a symphony of flavors, carefully curated to suit a variety of events and preferences. From sophisticated appetizers to indulgent desserts, our offerings are designed to impress and delight your guests. Experience the convenience of having a culinary expert take care of the details, allowing you to focus on enjoying the moment.</p>
+            </div>
+            <div class="box">
+                <img src="img/3.png" alt="">
+                <h2 class="h-secondary center">Bulk Ordering</h2>
+                <p class="center">At MyOnlineMeal, we go beyond providing exceptional online dining experiences. Elevate your special occasions with our catering services, designed to add a touch of culinary excellence to your events. Whether you're planning a corporate gathering, a wedding celebration, or a private party, our catering services are tailored to meet your unique needs.</p>
+            </div>
+        </div>
+    </selection>
+    <section id="client-section">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="img/logo1.png" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="img/logo2.png" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="img/logo3.png" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="img/logo4.png" alt="Our Client">
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact_box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" name="name" id="email" placeholder="Enter Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="name">Phone Number:</label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter Your Phone No.">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+                <button type="submit" class="btn" onClick="feedbackUser()">Submit</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            Copyright &copy; www.MyOnlineMail.com. All Rights Are Reserved
+        </div>
+    </footer>
+</body>
+
+</html>
